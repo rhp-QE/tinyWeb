@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.VHYzeaTRNC/Coroutine/Coroutine.cpp
+cassert
+-
+cstdlib
+-
+cstring
+-
+cstdio
+-
+Coroutine.h
+/tmp/tmp.VHYzeaTRNC/Coroutine/Coroutine.h
+
+/tmp/tmp.VHYzeaTRNC/Coroutine/Coroutine.h
+functional
+-
+vector
+-
+memory
+-
+ucontext.h
+-
+
