@@ -15,15 +15,13 @@
 
 //#include "../exhead.h"
 
-#include "Poller.h"
+//#include "Poller.h"
 #include <thread>
 #include <mutex>
 #include <vector>
 #include <atomic>
 #include <boost/any.hpp>
 #include "../Timer/TimeId.h"
-#include "Channel.h"
-#include "Poller.h"
 
 namespace QE {
     namespace net {

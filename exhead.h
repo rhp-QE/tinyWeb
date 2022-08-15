@@ -17,6 +17,7 @@
 #include <muduo/net/Buffer.h>
 #include <muduo/net//InetAddress.h>
 #include <muduo/net/Socket.h>
+#include <muduo/base/StringPiece.h>
 #include <muduo/net/SocketsOps.h>
 
 
@@ -26,7 +27,7 @@ namespace QE{
     typedef muduo::LogFile LogFile;
     typedef muduo::Timestamp Timestamp;
     typedef muduo::Logger Logger;
-
+    typedef muduo::StringPiece StringPiece;
 
 
 

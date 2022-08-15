@@ -19,14 +19,16 @@ namespace QE {
 
         class EventLoopThreadPool {
         public:
-            EventLoopThreadPool( int num = 0);
+            EventLoopThreadPool(EventLoop *mainLoop);
+            void start();
+            void setThreadNum(int num);
             EventLoop*  getNextLoop();
         private:
             int numThreads_;
             std::atomic<int> pos;
             std::mutex mutex_;
             std::vector<EventLoop*> loops_;
-
+            EventLoop* mainLoop_;
             std::vector<std::thread> threads_;
 
             void threadfunc_();

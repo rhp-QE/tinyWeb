@@ -1,3 +1,11 @@
+/*
+ * @Author: QE 2767360276@qq.com
+ * @Date: 2022-07-29 12:11:07
+ * @LastEditors: QE 2767360276@qq.com
+ * @LastEditTime: 2022-08-05 02:09:27
+ * @FilePath: /tinyWeb/Reactor/Poller.h
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 //
 // Created by 27673 on 2022/7/1.
 //
