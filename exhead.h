@@ -14,6 +14,8 @@
 #include <muduo/base/Timestamp.h>
 #include <muduo/base/Logging.h>
 #include <functional>
+#include "Base/copyable.h"
+#include "Base/noncopyable.h"
 #include <muduo/net/Buffer.h>
 #include <muduo/net//InetAddress.h>
 #include <muduo/net/Socket.h>
@@ -22,8 +24,6 @@
 
 
 namespace QE{
-    typedef muduo::noncopyable noncopyable;
-    typedef muduo::noncopyable copyable;
     typedef muduo::LogFile LogFile;
     typedef muduo::Timestamp Timestamp;
     typedef muduo::Logger Logger;

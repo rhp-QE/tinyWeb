@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/clone/tinyWeb/Base/copyable.h
+
+/clone/tinyWeb/Base/noncopyable.h
+
 /clone/tinyWeb/Log/AsyncLog.cpp
 AsyncLog.h
 /clone/tinyWeb/Log/AsyncLog.h
@@ -45,8 +49,8 @@ sstream
 /clone/tinyWeb/Reactor/Channel.h
 muduo/base/Timestamp.h
 -
-muduo/base/noncopyable.h
--
+../Base/noncopyable.h
+/clone/tinyWeb/Base/noncopyable.h
 string
 -
 functional
@@ -126,9 +130,37 @@ muduo/net/Socket.h
 muduo/net/InetAddress.h
 -
 
+/clone/tinyWeb/Server/Connector.cpp
+Connector.h
+/clone/tinyWeb/Server/Connector.h
+../Reactor/Channel.h
+/clone/tinyWeb/Reactor/Channel.h
+../Reactor/EventLoop.h
+/clone/tinyWeb/Reactor/EventLoop.h
+muduo/base/Logging.h
+/clone/tinyWeb/Server/muduo/base/Logging.h
+muduo/net/SocketsOps.h
+-
+errno.h
+-
+
+/clone/tinyWeb/Server/Connector.h
+../Base/noncopyable.h
+/clone/tinyWeb/Base/noncopyable.h
+functional
+-
+memory
+-
+muduo/net/InetAddress.h
+-
+type_traits
+-
+
 /clone/tinyWeb/Server/EventLoopThreadPool.cpp
 EventLoopThreadPool.h
 /clone/tinyWeb/Server/EventLoopThreadPool.h
+cassert
+-
 
 /clone/tinyWeb/Server/EventLoopThreadPool.h
 ../Reactor/EventLoop.h
@@ -142,6 +174,28 @@ thread
 mutex
 -
 atomic
+-
+
+/clone/tinyWeb/Server/TcpClient.cpp
+TcpClient.h
+/clone/tinyWeb/Server/TcpClient.h
+../Reactor/EventLoop.h
+/clone/tinyWeb/Reactor/EventLoop.h
+Connector.h
+/clone/tinyWeb/Server/Connector.h
+muduo/base/Logging.h
+-
+muduo/net/SocketsOps.h
+-
+mutex
+-
+stdio.h
+-
+
+/clone/tinyWeb/Server/TcpClient.h
+../Tcp/TcpConnection.h
+/clone/tinyWeb/Tcp/TcpConnection.h
+mutex
 -
 
 /clone/tinyWeb/Server/TcpServer.cpp
@@ -263,6 +317,10 @@ muduo/base/Logging.h
 -
 functional
 -
+Base/copyable.h
+/clone/tinyWeb/Base/copyable.h
+Base/noncopyable.h
+/clone/tinyWeb/Base/noncopyable.h
 muduo/net/Buffer.h
 -
 muduo/net/InetAddress.h

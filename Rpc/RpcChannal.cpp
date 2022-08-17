@@ -53,8 +53,8 @@ void RpcChannel::CallMethod(const ::google::protobuf::MethodDescriptor* method,
 {
     RpcMessage message;
     message.set_type(REQUEST);
-    int64_t id = ++id;
-    message.set_id(id);
+    int64_t id = ++id_;
+    message.set_id(id); 
     message.set_service(method->service()->full_name());
     message.set_method(method->name());
     message.set_request(request->SerializeAsString()); // FIXME: error check
@@ -71,6 +71,7 @@ void RpcChannel::onMessage(const TcpConnectionPtr& conn,
     Buffer* buf,
     Timestamp receiveTime)
 {
+    LOG_INFO<<"client get message";
     codec_.onMessage(conn, buf, receiveTime);
 }
 
@@ -81,6 +82,7 @@ void RpcChannel::onRpcMessage(const TcpConnectionPtr& conn,
     assert(conn == conn_);
     // printf("%s\n", message.DebugString().c_str());
     RpcMessage& message = *messagePtr;
+    //如果是请求
     if (message.type() == RESPONSE) {
         int64_t id = message.id();
         assert(message.has_response() || message.has_error());
@@ -102,10 +104,11 @@ void RpcChannel::onRpcMessage(const TcpConnectionPtr& conn,
                 out.response->ParseFromString(message.response());
             }
             if (out.done) {
-                out.done->Run();
+                out.done->Run();  //客户端注册的回调
             }
         }
     } else if (message.type() == REQUEST) {
+        //如果是响应
         // FIXME: extract to a function
         ErrorCode error = WRONG_PROTO;
         if (services_) {

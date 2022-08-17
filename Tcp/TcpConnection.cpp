@@ -7,6 +7,15 @@
 using namespace QE;
 using namespace QE::net;
 
+namespace QE {
+namespace net {
+    void defaultConnectionCallback(const TcpConnectionPtr& conn) { }
+    void defaultMessageCallback(const TcpConnectionPtr& conn,
+        Buffer* buffer,
+        Timestamp receiveTime) { }
+}  //namespace net
+}  //namespace QE
+
 TcpConnection::TcpConnection(EventLoop* loop, const std::string& nameArg,
     int sockfd, const InetAddress& localAddr,
     const InetAddress& peerAddr)

@@ -1,7 +1,7 @@
 #include "RpcCodec.h"
 
 
-namespace muduo {
+namespace QE {
 namespace net {
     const char rpctag[] = "RPC0";
 }

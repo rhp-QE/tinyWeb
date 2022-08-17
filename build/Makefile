@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /clone/tinyWeb/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -96,6 +85,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,6 +130,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named RpcClient
+
+# Build rule for target.
+RpcClient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RpcClient
+.PHONY : RpcClient
+
+# fast build rule for target.
+RpcClient/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/build
+.PHONY : RpcClient/fast
+
+#=============================================================================
+# Target rules for targets named RpcServer
+
+# Build rule for target.
+RpcServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RpcServer
+.PHONY : RpcServer
+
+# fast build rule for target.
+RpcServer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/build
+.PHONY : RpcServer/fast
+
+#=============================================================================
 # Target rules for targets named tinyWeb
 
 # Build rule for target.
@@ -142,39 +168,14 @@ tinyWeb/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/build
 .PHONY : tinyWeb/fast
 
-Coroutine/Coroutine.o: Coroutine/Coroutine.cpp.o
-
-.PHONY : Coroutine/Coroutine.o
-
-# target to build an object file
-Coroutine/Coroutine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o
-.PHONY : Coroutine/Coroutine.cpp.o
-
-Coroutine/Coroutine.i: Coroutine/Coroutine.cpp.i
-
-.PHONY : Coroutine/Coroutine.i
-
-# target to preprocess a source file
-Coroutine/Coroutine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.i
-.PHONY : Coroutine/Coroutine.cpp.i
-
-Coroutine/Coroutine.s: Coroutine/Coroutine.cpp.s
-
-.PHONY : Coroutine/Coroutine.s
-
-# target to generate assembly for a file
-Coroutine/Coroutine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.s
-.PHONY : Coroutine/Coroutine.cpp.s
-
 Log/AsyncLog.o: Log/AsyncLog.cpp.o
 
 .PHONY : Log/AsyncLog.o
 
 # target to build an object file
 Log/AsyncLog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o
 .PHONY : Log/AsyncLog.cpp.o
 
@@ -184,6 +185,8 @@ Log/AsyncLog.i: Log/AsyncLog.cpp.i
 
 # target to preprocess a source file
 Log/AsyncLog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i
 .PHONY : Log/AsyncLog.cpp.i
 
@@ -193,6 +196,8 @@ Log/AsyncLog.s: Log/AsyncLog.cpp.s
 
 # target to generate assembly for a file
 Log/AsyncLog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s
 .PHONY : Log/AsyncLog.cpp.s
 
@@ -202,6 +207,8 @@ Reactor/Channel.o: Reactor/Channel.cpp.o
 
 # target to build an object file
 Reactor/Channel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o
 .PHONY : Reactor/Channel.cpp.o
 
@@ -211,6 +218,8 @@ Reactor/Channel.i: Reactor/Channel.cpp.i
 
 # target to preprocess a source file
 Reactor/Channel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.i
 .PHONY : Reactor/Channel.cpp.i
 
@@ -220,6 +229,8 @@ Reactor/Channel.s: Reactor/Channel.cpp.s
 
 # target to generate assembly for a file
 Reactor/Channel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.s
 .PHONY : Reactor/Channel.cpp.s
 
@@ -229,6 +240,8 @@ Reactor/EventLoop.o: Reactor/EventLoop.cpp.o
 
 # target to build an object file
 Reactor/EventLoop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o
 .PHONY : Reactor/EventLoop.cpp.o
 
@@ -238,6 +251,8 @@ Reactor/EventLoop.i: Reactor/EventLoop.cpp.i
 
 # target to preprocess a source file
 Reactor/EventLoop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.i
 .PHONY : Reactor/EventLoop.cpp.i
 
@@ -247,6 +262,8 @@ Reactor/EventLoop.s: Reactor/EventLoop.cpp.s
 
 # target to generate assembly for a file
 Reactor/EventLoop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.s
 .PHONY : Reactor/EventLoop.cpp.s
 
@@ -256,6 +273,8 @@ Reactor/Poller.o: Reactor/Poller.cpp.o
 
 # target to build an object file
 Reactor/Poller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o
 .PHONY : Reactor/Poller.cpp.o
 
@@ -265,6 +284,8 @@ Reactor/Poller.i: Reactor/Poller.cpp.i
 
 # target to preprocess a source file
 Reactor/Poller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.i
 .PHONY : Reactor/Poller.cpp.i
 
@@ -274,8 +295,160 @@ Reactor/Poller.s: Reactor/Poller.cpp.s
 
 # target to generate assembly for a file
 Reactor/Poller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.s
 .PHONY : Reactor/Poller.cpp.s
+
+Rpc/ProtobufCodec.o: Rpc/ProtobufCodec.cpp.o
+
+.PHONY : Rpc/ProtobufCodec.o
+
+# target to build an object file
+Rpc/ProtobufCodec.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/ProtobufCodec.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/ProtobufCodec.cpp.o
+.PHONY : Rpc/ProtobufCodec.cpp.o
+
+Rpc/ProtobufCodec.i: Rpc/ProtobufCodec.cpp.i
+
+.PHONY : Rpc/ProtobufCodec.i
+
+# target to preprocess a source file
+Rpc/ProtobufCodec.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/ProtobufCodec.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/ProtobufCodec.cpp.i
+.PHONY : Rpc/ProtobufCodec.cpp.i
+
+Rpc/ProtobufCodec.s: Rpc/ProtobufCodec.cpp.s
+
+.PHONY : Rpc/ProtobufCodec.s
+
+# target to generate assembly for a file
+Rpc/ProtobufCodec.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/ProtobufCodec.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/ProtobufCodec.cpp.s
+.PHONY : Rpc/ProtobufCodec.cpp.s
+
+Rpc/RpcChannal.o: Rpc/RpcChannal.cpp.o
+
+.PHONY : Rpc/RpcChannal.o
+
+# target to build an object file
+Rpc/RpcChannal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcChannal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcChannal.cpp.o
+.PHONY : Rpc/RpcChannal.cpp.o
+
+Rpc/RpcChannal.i: Rpc/RpcChannal.cpp.i
+
+.PHONY : Rpc/RpcChannal.i
+
+# target to preprocess a source file
+Rpc/RpcChannal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcChannal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcChannal.cpp.i
+.PHONY : Rpc/RpcChannal.cpp.i
+
+Rpc/RpcChannal.s: Rpc/RpcChannal.cpp.s
+
+.PHONY : Rpc/RpcChannal.s
+
+# target to generate assembly for a file
+Rpc/RpcChannal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcChannal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcChannal.cpp.s
+.PHONY : Rpc/RpcChannal.cpp.s
+
+Rpc/RpcCodec.o: Rpc/RpcCodec.cpp.o
+
+.PHONY : Rpc/RpcCodec.o
+
+# target to build an object file
+Rpc/RpcCodec.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcCodec.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcCodec.cpp.o
+.PHONY : Rpc/RpcCodec.cpp.o
+
+Rpc/RpcCodec.i: Rpc/RpcCodec.cpp.i
+
+.PHONY : Rpc/RpcCodec.i
+
+# target to preprocess a source file
+Rpc/RpcCodec.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcCodec.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcCodec.cpp.i
+.PHONY : Rpc/RpcCodec.cpp.i
+
+Rpc/RpcCodec.s: Rpc/RpcCodec.cpp.s
+
+.PHONY : Rpc/RpcCodec.s
+
+# target to generate assembly for a file
+Rpc/RpcCodec.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcCodec.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcCodec.cpp.s
+.PHONY : Rpc/RpcCodec.cpp.s
+
+Rpc/RpcServer.o: Rpc/RpcServer.cpp.o
+
+.PHONY : Rpc/RpcServer.o
+
+# target to build an object file
+Rpc/RpcServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcServer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcServer.cpp.o
+.PHONY : Rpc/RpcServer.cpp.o
+
+Rpc/RpcServer.i: Rpc/RpcServer.cpp.i
+
+.PHONY : Rpc/RpcServer.i
+
+# target to preprocess a source file
+Rpc/RpcServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcServer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcServer.cpp.i
+.PHONY : Rpc/RpcServer.cpp.i
+
+Rpc/RpcServer.s: Rpc/RpcServer.cpp.s
+
+.PHONY : Rpc/RpcServer.s
+
+# target to generate assembly for a file
+Rpc/RpcServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/RpcServer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/RpcServer.cpp.s
+.PHONY : Rpc/RpcServer.cpp.s
+
+Rpc/rpc.pb.o: Rpc/rpc.pb.cc.o
+
+.PHONY : Rpc/rpc.pb.o
+
+# target to build an object file
+Rpc/rpc.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/rpc.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/rpc.pb.cc.o
+.PHONY : Rpc/rpc.pb.cc.o
+
+Rpc/rpc.pb.i: Rpc/rpc.pb.cc.i
+
+.PHONY : Rpc/rpc.pb.i
+
+# target to preprocess a source file
+Rpc/rpc.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/rpc.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/rpc.pb.cc.i
+.PHONY : Rpc/rpc.pb.cc.i
+
+Rpc/rpc.pb.s: Rpc/rpc.pb.cc.s
+
+.PHONY : Rpc/rpc.pb.s
+
+# target to generate assembly for a file
+Rpc/rpc.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Rpc/rpc.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Rpc/rpc.pb.cc.s
+.PHONY : Rpc/rpc.pb.cc.s
 
 Server/Acceptor.o: Server/Acceptor.cpp.o
 
@@ -283,6 +456,8 @@ Server/Acceptor.o: Server/Acceptor.cpp.o
 
 # target to build an object file
 Server/Acceptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o
 .PHONY : Server/Acceptor.cpp.o
 
@@ -292,6 +467,8 @@ Server/Acceptor.i: Server/Acceptor.cpp.i
 
 # target to preprocess a source file
 Server/Acceptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i
 .PHONY : Server/Acceptor.cpp.i
 
@@ -301,8 +478,43 @@ Server/Acceptor.s: Server/Acceptor.cpp.s
 
 # target to generate assembly for a file
 Server/Acceptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s
 .PHONY : Server/Acceptor.cpp.s
+
+Server/Connector.o: Server/Connector.cpp.o
+
+.PHONY : Server/Connector.o
+
+# target to build an object file
+Server/Connector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Connector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Connector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o
+.PHONY : Server/Connector.cpp.o
+
+Server/Connector.i: Server/Connector.cpp.i
+
+.PHONY : Server/Connector.i
+
+# target to preprocess a source file
+Server/Connector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Connector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Connector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Connector.cpp.i
+.PHONY : Server/Connector.cpp.i
+
+Server/Connector.s: Server/Connector.cpp.s
+
+.PHONY : Server/Connector.s
+
+# target to generate assembly for a file
+Server/Connector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Connector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Connector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Connector.cpp.s
+.PHONY : Server/Connector.cpp.s
 
 Server/EventLoopThreadPool.o: Server/EventLoopThreadPool.cpp.o
 
@@ -310,6 +522,8 @@ Server/EventLoopThreadPool.o: Server/EventLoopThreadPool.cpp.o
 
 # target to build an object file
 Server/EventLoopThreadPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o
 .PHONY : Server/EventLoopThreadPool.cpp.o
 
@@ -319,6 +533,8 @@ Server/EventLoopThreadPool.i: Server/EventLoopThreadPool.cpp.i
 
 # target to preprocess a source file
 Server/EventLoopThreadPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i
 .PHONY : Server/EventLoopThreadPool.cpp.i
 
@@ -328,8 +544,43 @@ Server/EventLoopThreadPool.s: Server/EventLoopThreadPool.cpp.s
 
 # target to generate assembly for a file
 Server/EventLoopThreadPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s
 .PHONY : Server/EventLoopThreadPool.cpp.s
+
+Server/TcpClient.o: Server/TcpClient.cpp.o
+
+.PHONY : Server/TcpClient.o
+
+# target to build an object file
+Server/TcpClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o
+.PHONY : Server/TcpClient.cpp.o
+
+Server/TcpClient.i: Server/TcpClient.cpp.i
+
+.PHONY : Server/TcpClient.i
+
+# target to preprocess a source file
+Server/TcpClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.i
+.PHONY : Server/TcpClient.cpp.i
+
+Server/TcpClient.s: Server/TcpClient.cpp.s
+
+.PHONY : Server/TcpClient.s
+
+# target to generate assembly for a file
+Server/TcpClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.s
+.PHONY : Server/TcpClient.cpp.s
 
 Server/TcpServer.o: Server/TcpServer.cpp.o
 
@@ -337,6 +588,8 @@ Server/TcpServer.o: Server/TcpServer.cpp.o
 
 # target to build an object file
 Server/TcpServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o
 .PHONY : Server/TcpServer.cpp.o
 
@@ -346,6 +599,8 @@ Server/TcpServer.i: Server/TcpServer.cpp.i
 
 # target to preprocess a source file
 Server/TcpServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.i
 .PHONY : Server/TcpServer.cpp.i
 
@@ -355,6 +610,8 @@ Server/TcpServer.s: Server/TcpServer.cpp.s
 
 # target to generate assembly for a file
 Server/TcpServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.s
 .PHONY : Server/TcpServer.cpp.s
 
@@ -364,6 +621,8 @@ Tcp/TcpConnection.o: Tcp/TcpConnection.cpp.o
 
 # target to build an object file
 Tcp/TcpConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o
 .PHONY : Tcp/TcpConnection.cpp.o
 
@@ -373,6 +632,8 @@ Tcp/TcpConnection.i: Tcp/TcpConnection.cpp.i
 
 # target to preprocess a source file
 Tcp/TcpConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.i
 .PHONY : Tcp/TcpConnection.cpp.i
 
@@ -382,6 +643,8 @@ Tcp/TcpConnection.s: Tcp/TcpConnection.cpp.s
 
 # target to generate assembly for a file
 Tcp/TcpConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.s
 .PHONY : Tcp/TcpConnection.cpp.s
 
@@ -418,6 +681,8 @@ Timer/Timer.o: Timer/Timer.cpp.o
 
 # target to build an object file
 Timer/Timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/Timer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/Timer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o
 .PHONY : Timer/Timer.cpp.o
 
@@ -427,6 +692,8 @@ Timer/Timer.i: Timer/Timer.cpp.i
 
 # target to preprocess a source file
 Timer/Timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/Timer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/Timer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i
 .PHONY : Timer/Timer.cpp.i
 
@@ -436,6 +703,8 @@ Timer/Timer.s: Timer/Timer.cpp.s
 
 # target to generate assembly for a file
 Timer/Timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/Timer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/Timer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s
 .PHONY : Timer/Timer.cpp.s
 
@@ -445,6 +714,8 @@ Timer/TimerQueue.o: Timer/TimerQueue.cpp.o
 
 # target to build an object file
 Timer/TimerQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o
 .PHONY : Timer/TimerQueue.cpp.o
 
@@ -454,6 +725,8 @@ Timer/TimerQueue.i: Timer/TimerQueue.cpp.i
 
 # target to preprocess a source file
 Timer/TimerQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i
 .PHONY : Timer/TimerQueue.cpp.i
 
@@ -463,8 +736,94 @@ Timer/TimerQueue.s: Timer/TimerQueue.cpp.s
 
 # target to generate assembly for a file
 Timer/TimerQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s
 .PHONY : Timer/TimerQueue.cpp.s
+
+cli.o: cli.cpp.o
+
+.PHONY : cli.o
+
+# target to build an object file
+cli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/cli.cpp.o
+.PHONY : cli.cpp.o
+
+cli.i: cli.cpp.i
+
+.PHONY : cli.i
+
+# target to preprocess a source file
+cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/cli.cpp.i
+.PHONY : cli.cpp.i
+
+cli.s: cli.cpp.s
+
+.PHONY : cli.s
+
+# target to generate assembly for a file
+cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/cli.cpp.s
+.PHONY : cli.cpp.s
+
+serv.o: serv.cpp.o
+
+.PHONY : serv.o
+
+# target to build an object file
+serv.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/serv.cpp.o
+.PHONY : serv.cpp.o
+
+serv.i: serv.cpp.i
+
+.PHONY : serv.i
+
+# target to preprocess a source file
+serv.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/serv.cpp.i
+.PHONY : serv.cpp.i
+
+serv.s: serv.cpp.s
+
+.PHONY : serv.s
+
+# target to generate assembly for a file
+serv.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/serv.cpp.s
+.PHONY : serv.cpp.s
+
+test.pb.o: test.pb.cc.o
+
+.PHONY : test.pb.o
+
+# target to build an object file
+test.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/test.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/test.pb.cc.o
+.PHONY : test.pb.cc.o
+
+test.pb.i: test.pb.cc.i
+
+.PHONY : test.pb.i
+
+# target to preprocess a source file
+test.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/test.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/test.pb.cc.i
+.PHONY : test.pb.cc.i
+
+test.pb.s: test.pb.cc.s
+
+.PHONY : test.pb.s
+
+# target to generate assembly for a file
+test.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/test.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/test.pb.cc.s
+.PHONY : test.pb.cc.s
 
 # Help Target
 help:
@@ -474,10 +833,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... RpcClient"
+	@echo "... RpcServer"
 	@echo "... tinyWeb"
-	@echo "... Coroutine/Coroutine.o"
-	@echo "... Coroutine/Coroutine.i"
-	@echo "... Coroutine/Coroutine.s"
 	@echo "... Log/AsyncLog.o"
 	@echo "... Log/AsyncLog.i"
 	@echo "... Log/AsyncLog.s"
@@ -490,12 +848,33 @@ help:
 	@echo "... Reactor/Poller.o"
 	@echo "... Reactor/Poller.i"
 	@echo "... Reactor/Poller.s"
+	@echo "... Rpc/ProtobufCodec.o"
+	@echo "... Rpc/ProtobufCodec.i"
+	@echo "... Rpc/ProtobufCodec.s"
+	@echo "... Rpc/RpcChannal.o"
+	@echo "... Rpc/RpcChannal.i"
+	@echo "... Rpc/RpcChannal.s"
+	@echo "... Rpc/RpcCodec.o"
+	@echo "... Rpc/RpcCodec.i"
+	@echo "... Rpc/RpcCodec.s"
+	@echo "... Rpc/RpcServer.o"
+	@echo "... Rpc/RpcServer.i"
+	@echo "... Rpc/RpcServer.s"
+	@echo "... Rpc/rpc.pb.o"
+	@echo "... Rpc/rpc.pb.i"
+	@echo "... Rpc/rpc.pb.s"
 	@echo "... Server/Acceptor.o"
 	@echo "... Server/Acceptor.i"
 	@echo "... Server/Acceptor.s"
+	@echo "... Server/Connector.o"
+	@echo "... Server/Connector.i"
+	@echo "... Server/Connector.s"
 	@echo "... Server/EventLoopThreadPool.o"
 	@echo "... Server/EventLoopThreadPool.i"
 	@echo "... Server/EventLoopThreadPool.s"
+	@echo "... Server/TcpClient.o"
+	@echo "... Server/TcpClient.i"
+	@echo "... Server/TcpClient.s"
 	@echo "... Server/TcpServer.o"
 	@echo "... Server/TcpServer.i"
 	@echo "... Server/TcpServer.s"
@@ -511,6 +890,15 @@ help:
 	@echo "... Timer/TimerQueue.o"
 	@echo "... Timer/TimerQueue.i"
 	@echo "... Timer/TimerQueue.s"
+	@echo "... cli.o"
+	@echo "... cli.i"
+	@echo "... cli.s"
+	@echo "... serv.o"
+	@echo "... serv.i"
+	@echo "... serv.s"
+	@echo "... test.pb.o"
+	@echo "... test.pb.i"
+	@echo "... test.pb.s"
 .PHONY : help
 
 

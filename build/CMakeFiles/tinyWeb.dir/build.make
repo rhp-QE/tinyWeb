@@ -102,44 +102,44 @@ CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/TcpServer.cpp -o CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.s
 
-CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
-CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o: ../Server/EventLoopThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o -c /clone/tinyWeb/Server/EventLoopThreadPool.cpp
+CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o: ../Server/TcpClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o -c /clone/tinyWeb/Server/TcpClient.cpp
 
-CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Server/EventLoopThreadPool.cpp > CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i
+CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Server/TcpClient.cpp > CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.i
 
-CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/EventLoopThreadPool.cpp -o CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s
+CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/TcpClient.cpp -o CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.s
 
-CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
-CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o: ../Timer/TimerQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o -c /clone/tinyWeb/Timer/TimerQueue.cpp
+CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o: ../Server/Acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o -c /clone/tinyWeb/Server/Acceptor.cpp
 
-CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Timer/TimerQueue.cpp > CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i
+CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Server/Acceptor.cpp > CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i
 
-CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Timer/TimerQueue.cpp -o CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s
+CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/Acceptor.cpp -o CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s
 
-CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
-CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o: ../Timer/Timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o -c /clone/tinyWeb/Timer/Timer.cpp
+CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o: ../Server/Connector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o -c /clone/tinyWeb/Server/Connector.cpp
 
-CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Timer/Timer.cpp > CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i
+CMakeFiles/tinyWeb.dir/Server/Connector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Server/Connector.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Server/Connector.cpp > CMakeFiles/tinyWeb.dir/Server/Connector.cpp.i
 
-CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Timer/Timer.cpp -o CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s
+CMakeFiles/tinyWeb.dir/Server/Connector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/Connector.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/Connector.cpp -o CMakeFiles/tinyWeb.dir/Server/Connector.cpp.s
 
 CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
 CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o: ../Tcp/TcpConnection.cpp
@@ -154,35 +154,48 @@ CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Tcp/TcpConnection.cpp -o CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.s
 
-CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
-CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o: ../Log/AsyncLog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o -c /clone/tinyWeb/Log/AsyncLog.cpp
+CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o: ../Timer/TimerQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o -c /clone/tinyWeb/Timer/TimerQueue.cpp
 
-CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Log/AsyncLog.cpp > CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i
+CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Timer/TimerQueue.cpp > CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i
 
-CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Log/AsyncLog.cpp -o CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s
+CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Timer/TimerQueue.cpp -o CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s
 
-CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
-CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o: ../Server/Acceptor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o -c /clone/tinyWeb/Server/Acceptor.cpp
+CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o: ../Timer/Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o -c /clone/tinyWeb/Timer/Timer.cpp
 
-CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Server/Acceptor.cpp > CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i
+CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Timer/Timer.cpp > CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i
 
-CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/Acceptor.cpp -o CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s
+CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Timer/Timer.cpp -o CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s
+
+CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o: ../Server/EventLoopThreadPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o -c /clone/tinyWeb/Server/EventLoopThreadPool.cpp
+
+CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Server/EventLoopThreadPool.cpp > CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i
+
+CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Server/EventLoopThreadPool.cpp -o CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s
 
 CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
 CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o: ../Reactor/EventLoop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o -c /clone/tinyWeb/Reactor/EventLoop.cpp
 
 CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.i: cmake_force
@@ -195,7 +208,7 @@ CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.s: cmake_force
 
 CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
 CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o: ../Reactor/Channel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o -c /clone/tinyWeb/Reactor/Channel.cpp
 
 CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.i: cmake_force
@@ -208,7 +221,7 @@ CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.s: cmake_force
 
 CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
 CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o: ../Reactor/Poller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o -c /clone/tinyWeb/Reactor/Poller.cpp
 
 CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.i: cmake_force
@@ -219,52 +232,54 @@ CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Reactor/Poller.cpp -o CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.s
 
-CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
-CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o: ../Coroutine/Coroutine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o -c /clone/tinyWeb/Coroutine/Coroutine.cpp
+CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o: CMakeFiles/tinyWeb.dir/flags.make
+CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o: ../Log/AsyncLog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o -c /clone/tinyWeb/Log/AsyncLog.cpp
 
-CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Coroutine/Coroutine.cpp > CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.i
+CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /clone/tinyWeb/Log/AsyncLog.cpp > CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i
 
-CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Coroutine/Coroutine.cpp -o CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.s
+CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /clone/tinyWeb/Log/AsyncLog.cpp -o CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s
 
 # Object files for target tinyWeb
 tinyWeb_OBJECTS = \
 "CMakeFiles/tinyWeb.dir/TcpTest.cpp.o" \
 "CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o" \
-"CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o" \
+"CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o" \
+"CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o" \
+"CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o" \
+"CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o" \
 "CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o" \
 "CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o" \
-"CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o" \
-"CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o" \
-"CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o" \
+"CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o" \
 "CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o" \
 "CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o" \
 "CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o" \
-"CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o"
+"CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o"
 
 # External object files for target tinyWeb
 tinyWeb_EXTERNAL_OBJECTS =
 
 tinyWeb: CMakeFiles/tinyWeb.dir/TcpTest.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o
-tinyWeb: CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o
+tinyWeb: CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o
+tinyWeb: CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o
+tinyWeb: CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o
+tinyWeb: CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o
-tinyWeb: CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o
-tinyWeb: CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o
-tinyWeb: CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o
+tinyWeb: CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o
-tinyWeb: CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o
+tinyWeb: CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o
 tinyWeb: CMakeFiles/tinyWeb.dir/build.make
 tinyWeb: CMakeFiles/tinyWeb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable tinyWeb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable tinyWeb"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tinyWeb.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

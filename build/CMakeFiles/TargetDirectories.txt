@@ -1,3 +1,5 @@
-/clone/tinyWeb/build/CMakeFiles/rebuild_cache.dir
 /clone/tinyWeb/build/CMakeFiles/edit_cache.dir
+/clone/tinyWeb/build/CMakeFiles/rebuild_cache.dir
+/clone/tinyWeb/build/CMakeFiles/RpcClient.dir
+/clone/tinyWeb/build/CMakeFiles/RpcServer.dir
 /clone/tinyWeb/build/CMakeFiles/tinyWeb.dir

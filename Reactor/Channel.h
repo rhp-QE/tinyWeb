@@ -6,14 +6,13 @@
 #define TINYWEB_CHANNEL_H
 
 #include <muduo/base/Timestamp.h>
-#include <muduo/base/noncopyable.h>
+#include "../Base/noncopyable.h"
 #include <string>
 
 #include <functional>
 #include <memory>
 #include "EventLoop.h"
 
-typedef muduo::noncopyable noncopyable;
 typedef muduo::Timestamp Timestamp;
 
 namespace

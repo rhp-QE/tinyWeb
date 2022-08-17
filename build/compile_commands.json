@@ -1,62 +1,257 @@
 [
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/TcpTest.cpp.o -c /clone/tinyWeb/TcpTest.cpp",
-  "file": "/clone/tinyWeb/TcpTest.cpp"
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/cli.cpp.o -c /clone/tinyWeb/cli.cpp",
+  "file": "/clone/tinyWeb/cli.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o -c /clone/tinyWeb/Server/TcpServer.cpp",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/test.pb.cc.o -c /clone/tinyWeb/test.pb.cc",
+  "file": "/clone/tinyWeb/test.pb.cc"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Rpc/RpcServer.cpp.o -c /clone/tinyWeb/Rpc/RpcServer.cpp",
+  "file": "/clone/tinyWeb/Rpc/RpcServer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Rpc/RpcChannal.cpp.o -c /clone/tinyWeb/Rpc/RpcChannal.cpp",
+  "file": "/clone/tinyWeb/Rpc/RpcChannal.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Rpc/RpcCodec.cpp.o -c /clone/tinyWeb/Rpc/RpcCodec.cpp",
+  "file": "/clone/tinyWeb/Rpc/RpcCodec.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Rpc/ProtobufCodec.cpp.o -c /clone/tinyWeb/Rpc/ProtobufCodec.cpp",
+  "file": "/clone/tinyWeb/Rpc/ProtobufCodec.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Rpc/rpc.pb.cc.o -c /clone/tinyWeb/Rpc/rpc.pb.cc",
+  "file": "/clone/tinyWeb/Rpc/rpc.pb.cc"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.o -c /clone/tinyWeb/Server/TcpServer.cpp",
   "file": "/clone/tinyWeb/Server/TcpServer.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o -c /clone/tinyWeb/Server/EventLoopThreadPool.cpp",
-  "file": "/clone/tinyWeb/Server/EventLoopThreadPool.cpp"
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.o -c /clone/tinyWeb/Server/TcpClient.cpp",
+  "file": "/clone/tinyWeb/Server/TcpClient.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o -c /clone/tinyWeb/Timer/TimerQueue.cpp",
-  "file": "/clone/tinyWeb/Timer/TimerQueue.cpp"
-},
-{
-  "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o -c /clone/tinyWeb/Timer/Timer.cpp",
-  "file": "/clone/tinyWeb/Timer/Timer.cpp"
-},
-{
-  "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o -c /clone/tinyWeb/Tcp/TcpConnection.cpp",
-  "file": "/clone/tinyWeb/Tcp/TcpConnection.cpp"
-},
-{
-  "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o -c /clone/tinyWeb/Log/AsyncLog.cpp",
-  "file": "/clone/tinyWeb/Log/AsyncLog.cpp"
-},
-{
-  "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o -c /clone/tinyWeb/Server/Acceptor.cpp",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.o -c /clone/tinyWeb/Server/Acceptor.cpp",
   "file": "/clone/tinyWeb/Server/Acceptor.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o -c /clone/tinyWeb/Reactor/EventLoop.cpp",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Server/Connector.cpp.o -c /clone/tinyWeb/Server/Connector.cpp",
+  "file": "/clone/tinyWeb/Server/Connector.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.o -c /clone/tinyWeb/Tcp/TcpConnection.cpp",
+  "file": "/clone/tinyWeb/Tcp/TcpConnection.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.o -c /clone/tinyWeb/Timer/TimerQueue.cpp",
+  "file": "/clone/tinyWeb/Timer/TimerQueue.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Timer/Timer.cpp.o -c /clone/tinyWeb/Timer/Timer.cpp",
+  "file": "/clone/tinyWeb/Timer/Timer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.o -c /clone/tinyWeb/Server/EventLoopThreadPool.cpp",
+  "file": "/clone/tinyWeb/Server/EventLoopThreadPool.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.o -c /clone/tinyWeb/Reactor/EventLoop.cpp",
   "file": "/clone/tinyWeb/Reactor/EventLoop.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o -c /clone/tinyWeb/Reactor/Channel.cpp",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.o -c /clone/tinyWeb/Reactor/Channel.cpp",
   "file": "/clone/tinyWeb/Reactor/Channel.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o -c /clone/tinyWeb/Reactor/Poller.cpp",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.o -c /clone/tinyWeb/Reactor/Poller.cpp",
   "file": "/clone/tinyWeb/Reactor/Poller.cpp"
 },
 {
   "directory": "/clone/tinyWeb/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o -c /clone/tinyWeb/Coroutine/Coroutine.cpp",
-  "file": "/clone/tinyWeb/Coroutine/Coroutine.cpp"
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.o -c /clone/tinyWeb/Log/AsyncLog.cpp",
+  "file": "/clone/tinyWeb/Log/AsyncLog.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/serv.cpp.o -c /clone/tinyWeb/serv.cpp",
+  "file": "/clone/tinyWeb/serv.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/test.pb.cc.o -c /clone/tinyWeb/test.pb.cc",
+  "file": "/clone/tinyWeb/test.pb.cc"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Rpc/RpcServer.cpp.o -c /clone/tinyWeb/Rpc/RpcServer.cpp",
+  "file": "/clone/tinyWeb/Rpc/RpcServer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Rpc/RpcChannal.cpp.o -c /clone/tinyWeb/Rpc/RpcChannal.cpp",
+  "file": "/clone/tinyWeb/Rpc/RpcChannal.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Rpc/RpcCodec.cpp.o -c /clone/tinyWeb/Rpc/RpcCodec.cpp",
+  "file": "/clone/tinyWeb/Rpc/RpcCodec.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Rpc/ProtobufCodec.cpp.o -c /clone/tinyWeb/Rpc/ProtobufCodec.cpp",
+  "file": "/clone/tinyWeb/Rpc/ProtobufCodec.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Rpc/rpc.pb.cc.o -c /clone/tinyWeb/Rpc/rpc.pb.cc",
+  "file": "/clone/tinyWeb/Rpc/rpc.pb.cc"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.o -c /clone/tinyWeb/Server/TcpServer.cpp",
+  "file": "/clone/tinyWeb/Server/TcpServer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.o -c /clone/tinyWeb/Server/TcpClient.cpp",
+  "file": "/clone/tinyWeb/Server/TcpClient.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.o -c /clone/tinyWeb/Server/Acceptor.cpp",
+  "file": "/clone/tinyWeb/Server/Acceptor.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Server/Connector.cpp.o -c /clone/tinyWeb/Server/Connector.cpp",
+  "file": "/clone/tinyWeb/Server/Connector.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.o -c /clone/tinyWeb/Tcp/TcpConnection.cpp",
+  "file": "/clone/tinyWeb/Tcp/TcpConnection.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.o -c /clone/tinyWeb/Timer/TimerQueue.cpp",
+  "file": "/clone/tinyWeb/Timer/TimerQueue.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Timer/Timer.cpp.o -c /clone/tinyWeb/Timer/Timer.cpp",
+  "file": "/clone/tinyWeb/Timer/Timer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.o -c /clone/tinyWeb/Server/EventLoopThreadPool.cpp",
+  "file": "/clone/tinyWeb/Server/EventLoopThreadPool.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.o -c /clone/tinyWeb/Reactor/EventLoop.cpp",
+  "file": "/clone/tinyWeb/Reactor/EventLoop.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.o -c /clone/tinyWeb/Reactor/Channel.cpp",
+  "file": "/clone/tinyWeb/Reactor/Channel.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.o -c /clone/tinyWeb/Reactor/Poller.cpp",
+  "file": "/clone/tinyWeb/Reactor/Poller.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.o -c /clone/tinyWeb/Log/AsyncLog.cpp",
+  "file": "/clone/tinyWeb/Log/AsyncLog.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/TcpTest.cpp.o -c /clone/tinyWeb/TcpTest.cpp",
+  "file": "/clone/tinyWeb/TcpTest.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o -c /clone/tinyWeb/Server/TcpServer.cpp",
+  "file": "/clone/tinyWeb/Server/TcpServer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o -c /clone/tinyWeb/Server/TcpClient.cpp",
+  "file": "/clone/tinyWeb/Server/TcpClient.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o -c /clone/tinyWeb/Server/Acceptor.cpp",
+  "file": "/clone/tinyWeb/Server/Acceptor.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o -c /clone/tinyWeb/Server/Connector.cpp",
+  "file": "/clone/tinyWeb/Server/Connector.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o -c /clone/tinyWeb/Tcp/TcpConnection.cpp",
+  "file": "/clone/tinyWeb/Tcp/TcpConnection.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o -c /clone/tinyWeb/Timer/TimerQueue.cpp",
+  "file": "/clone/tinyWeb/Timer/TimerQueue.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o -c /clone/tinyWeb/Timer/Timer.cpp",
+  "file": "/clone/tinyWeb/Timer/Timer.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o -c /clone/tinyWeb/Server/EventLoopThreadPool.cpp",
+  "file": "/clone/tinyWeb/Server/EventLoopThreadPool.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o -c /clone/tinyWeb/Reactor/EventLoop.cpp",
+  "file": "/clone/tinyWeb/Reactor/EventLoop.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o -c /clone/tinyWeb/Reactor/Channel.cpp",
+  "file": "/clone/tinyWeb/Reactor/Channel.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o -c /clone/tinyWeb/Reactor/Poller.cpp",
+  "file": "/clone/tinyWeb/Reactor/Poller.cpp"
+},
+{
+  "directory": "/clone/tinyWeb/build",
+  "command": "/usr/bin/g++   -g   -Wall -g -std=gnu++14 -o CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o -c /clone/tinyWeb/Log/AsyncLog.cpp",
+  "file": "/clone/tinyWeb/Log/AsyncLog.cpp"
 }
 ]

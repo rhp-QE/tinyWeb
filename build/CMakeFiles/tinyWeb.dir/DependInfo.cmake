@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/clone/tinyWeb/Coroutine/Coroutine.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Coroutine/Coroutine.cpp.o"
   "/clone/tinyWeb/Log/AsyncLog.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o"
   "/clone/tinyWeb/Reactor/Channel.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o"
   "/clone/tinyWeb/Reactor/EventLoop.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o"
   "/clone/tinyWeb/Reactor/Poller.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o"
   "/clone/tinyWeb/Server/Acceptor.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o"
+  "/clone/tinyWeb/Server/Connector.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o"
   "/clone/tinyWeb/Server/EventLoopThreadPool.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o"
+  "/clone/tinyWeb/Server/TcpClient.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o"
   "/clone/tinyWeb/Server/TcpServer.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o"
   "/clone/tinyWeb/Tcp/TcpConnection.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o"
   "/clone/tinyWeb/TcpTest.cpp" "/clone/tinyWeb/build/CMakeFiles/tinyWeb.dir/TcpTest.cpp.o"

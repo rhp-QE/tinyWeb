@@ -72,6 +72,8 @@ CMAKE_BINARY_DIR = /clone/tinyWeb/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/RpcClient.dir/all
+all: CMakeFiles/RpcServer.dir/all
 all: CMakeFiles/tinyWeb.dir/all
 
 .PHONY : all
@@ -82,9 +84,65 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/RpcClient.dir/clean
+clean: CMakeFiles/RpcServer.dir/clean
 clean: CMakeFiles/tinyWeb.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RpcClient.dir
+
+# All Build rule for target.
+CMakeFiles/RpcClient.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target RpcClient"
+.PHONY : CMakeFiles/RpcClient.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RpcClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RpcClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 0
+.PHONY : CMakeFiles/RpcClient.dir/rule
+
+# Convenience name for target.
+RpcClient: CMakeFiles/RpcClient.dir/rule
+
+.PHONY : RpcClient
+
+# clean rule for target.
+CMakeFiles/RpcClient.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/clean
+.PHONY : CMakeFiles/RpcClient.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RpcServer.dir
+
+# All Build rule for target.
+CMakeFiles/RpcServer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target RpcServer"
+.PHONY : CMakeFiles/RpcServer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RpcServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RpcServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 0
+.PHONY : CMakeFiles/RpcServer.dir/rule
+
+# Convenience name for target.
+RpcServer: CMakeFiles/RpcServer.dir/rule
+
+.PHONY : RpcServer
+
+# clean rule for target.
+CMakeFiles/RpcServer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/clean
+.PHONY : CMakeFiles/RpcServer.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tinyWeb.dir
@@ -93,12 +151,12 @@ clean: CMakeFiles/tinyWeb.dir/clean
 CMakeFiles/tinyWeb.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target tinyWeb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target tinyWeb"
 .PHONY : CMakeFiles/tinyWeb.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tinyWeb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tinyWeb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 0
 .PHONY : CMakeFiles/tinyWeb.dir/rule

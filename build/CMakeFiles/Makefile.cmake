@@ -45,5 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/RpcClient.dir/DependInfo.cmake"
+  "CMakeFiles/RpcServer.dir/DependInfo.cmake"
   "CMakeFiles/tinyWeb.dir/DependInfo.cmake"
   )
