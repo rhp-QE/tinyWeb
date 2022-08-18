@@ -116,7 +116,7 @@ void TcpServer::removeConnectionInLoop(const TcpConnectionPtr& conn)
     (void)n;
     assert(n == 1);
     EventLoop* ioLoop = conn->getLoop();
-    auto th = conn.get();
+    //auto th = conn.get();
     // ioLoop->queueInLoop([&]{TcpConnection::connectDestroyed(conn);});
 
     ioLoop->queueInLoop(

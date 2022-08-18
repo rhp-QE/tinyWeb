@@ -17,6 +17,10 @@ void onConnection(const TcpConnectionPtr& conn)
 void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp)
 {
     LOG_INFO << "get message";
+    auto res = buf->peek();
+
+    printf("%s\n", res);
+
     conn->send(buf);
 }
 
