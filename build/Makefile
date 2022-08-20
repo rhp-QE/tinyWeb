@@ -156,6 +156,19 @@ RpcServer/fast:
 .PHONY : RpcServer/fast
 
 #=============================================================================
+# Target rules for targets named tinyWeb1
+
+# Build rule for target.
+tinyWeb1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyWeb1
+.PHONY : tinyWeb1
+
+# fast build rule for target.
+tinyWeb1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/build
+.PHONY : tinyWeb1/fast
+
+#=============================================================================
 # Target rules for targets named tinyWeb
 
 # Build rule for target.
@@ -176,6 +189,7 @@ Log/AsyncLog.o: Log/AsyncLog.cpp.o
 Log/AsyncLog.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Log/AsyncLog.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.o
 .PHONY : Log/AsyncLog.cpp.o
 
@@ -187,6 +201,7 @@ Log/AsyncLog.i: Log/AsyncLog.cpp.i
 Log/AsyncLog.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Log/AsyncLog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.i
 .PHONY : Log/AsyncLog.cpp.i
 
@@ -198,6 +213,7 @@ Log/AsyncLog.s: Log/AsyncLog.cpp.s
 Log/AsyncLog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Log/AsyncLog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Log/AsyncLog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Log/AsyncLog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Log/AsyncLog.cpp.s
 .PHONY : Log/AsyncLog.cpp.s
 
@@ -209,6 +225,7 @@ Reactor/Channel.o: Reactor/Channel.cpp.o
 Reactor/Channel.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/Channel.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.o
 .PHONY : Reactor/Channel.cpp.o
 
@@ -220,6 +237,7 @@ Reactor/Channel.i: Reactor/Channel.cpp.i
 Reactor/Channel.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/Channel.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.i
 .PHONY : Reactor/Channel.cpp.i
 
@@ -231,6 +249,7 @@ Reactor/Channel.s: Reactor/Channel.cpp.s
 Reactor/Channel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Channel.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Channel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/Channel.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Channel.cpp.s
 .PHONY : Reactor/Channel.cpp.s
 
@@ -242,6 +261,7 @@ Reactor/EventLoop.o: Reactor/EventLoop.cpp.o
 Reactor/EventLoop.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/EventLoop.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.o
 .PHONY : Reactor/EventLoop.cpp.o
 
@@ -253,6 +273,7 @@ Reactor/EventLoop.i: Reactor/EventLoop.cpp.i
 Reactor/EventLoop.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/EventLoop.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.i
 .PHONY : Reactor/EventLoop.cpp.i
 
@@ -264,6 +285,7 @@ Reactor/EventLoop.s: Reactor/EventLoop.cpp.s
 Reactor/EventLoop.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/EventLoop.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/EventLoop.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/EventLoop.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/EventLoop.cpp.s
 .PHONY : Reactor/EventLoop.cpp.s
 
@@ -275,6 +297,7 @@ Reactor/Poller.o: Reactor/Poller.cpp.o
 Reactor/Poller.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/Poller.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.o
 .PHONY : Reactor/Poller.cpp.o
 
@@ -286,6 +309,7 @@ Reactor/Poller.i: Reactor/Poller.cpp.i
 Reactor/Poller.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/Poller.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.i
 .PHONY : Reactor/Poller.cpp.i
 
@@ -297,6 +321,7 @@ Reactor/Poller.s: Reactor/Poller.cpp.s
 Reactor/Poller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Reactor/Poller.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Reactor/Poller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Reactor/Poller.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Reactor/Poller.cpp.s
 .PHONY : Reactor/Poller.cpp.s
 
@@ -458,6 +483,7 @@ Server/Acceptor.o: Server/Acceptor.cpp.o
 Server/Acceptor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/Acceptor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.o
 .PHONY : Server/Acceptor.cpp.o
 
@@ -469,6 +495,7 @@ Server/Acceptor.i: Server/Acceptor.cpp.i
 Server/Acceptor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/Acceptor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.i
 .PHONY : Server/Acceptor.cpp.i
 
@@ -480,6 +507,7 @@ Server/Acceptor.s: Server/Acceptor.cpp.s
 Server/Acceptor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Acceptor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Acceptor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/Acceptor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Acceptor.cpp.s
 .PHONY : Server/Acceptor.cpp.s
 
@@ -491,6 +519,7 @@ Server/Connector.o: Server/Connector.cpp.o
 Server/Connector.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Connector.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Connector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/Connector.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Connector.cpp.o
 .PHONY : Server/Connector.cpp.o
 
@@ -502,6 +531,7 @@ Server/Connector.i: Server/Connector.cpp.i
 Server/Connector.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Connector.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Connector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/Connector.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Connector.cpp.i
 .PHONY : Server/Connector.cpp.i
 
@@ -513,6 +543,7 @@ Server/Connector.s: Server/Connector.cpp.s
 Server/Connector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/Connector.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/Connector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/Connector.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/Connector.cpp.s
 .PHONY : Server/Connector.cpp.s
 
@@ -524,6 +555,7 @@ Server/EventLoopThreadPool.o: Server/EventLoopThreadPool.cpp.o
 Server/EventLoopThreadPool.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/EventLoopThreadPool.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.o
 .PHONY : Server/EventLoopThreadPool.cpp.o
 
@@ -535,6 +567,7 @@ Server/EventLoopThreadPool.i: Server/EventLoopThreadPool.cpp.i
 Server/EventLoopThreadPool.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/EventLoopThreadPool.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.i
 .PHONY : Server/EventLoopThreadPool.cpp.i
 
@@ -546,6 +579,7 @@ Server/EventLoopThreadPool.s: Server/EventLoopThreadPool.cpp.s
 Server/EventLoopThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/EventLoopThreadPool.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/EventLoopThreadPool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/EventLoopThreadPool.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/EventLoopThreadPool.cpp.s
 .PHONY : Server/EventLoopThreadPool.cpp.s
 
@@ -557,6 +591,7 @@ Server/TcpClient.o: Server/TcpClient.cpp.o
 Server/TcpClient.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/TcpClient.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.o
 .PHONY : Server/TcpClient.cpp.o
 
@@ -568,6 +603,7 @@ Server/TcpClient.i: Server/TcpClient.cpp.i
 Server/TcpClient.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/TcpClient.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.i
 .PHONY : Server/TcpClient.cpp.i
 
@@ -579,6 +615,7 @@ Server/TcpClient.s: Server/TcpClient.cpp.s
 Server/TcpClient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpClient.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpClient.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/TcpClient.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpClient.cpp.s
 .PHONY : Server/TcpClient.cpp.s
 
@@ -590,6 +627,7 @@ Server/TcpServer.o: Server/TcpServer.cpp.o
 Server/TcpServer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/TcpServer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.o
 .PHONY : Server/TcpServer.cpp.o
 
@@ -601,6 +639,7 @@ Server/TcpServer.i: Server/TcpServer.cpp.i
 Server/TcpServer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/TcpServer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.i
 .PHONY : Server/TcpServer.cpp.i
 
@@ -612,6 +651,7 @@ Server/TcpServer.s: Server/TcpServer.cpp.s
 Server/TcpServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Server/TcpServer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Server/TcpServer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Server/TcpServer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Server/TcpServer.cpp.s
 .PHONY : Server/TcpServer.cpp.s
 
@@ -623,6 +663,7 @@ Tcp/TcpConnection.o: Tcp/TcpConnection.cpp.o
 Tcp/TcpConnection.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Tcp/TcpConnection.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.o
 .PHONY : Tcp/TcpConnection.cpp.o
 
@@ -634,6 +675,7 @@ Tcp/TcpConnection.i: Tcp/TcpConnection.cpp.i
 Tcp/TcpConnection.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Tcp/TcpConnection.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.i
 .PHONY : Tcp/TcpConnection.cpp.i
 
@@ -645,8 +687,36 @@ Tcp/TcpConnection.s: Tcp/TcpConnection.cpp.s
 Tcp/TcpConnection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Tcp/TcpConnection.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Tcp/TcpConnection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Tcp/TcpConnection.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Tcp/TcpConnection.cpp.s
 .PHONY : Tcp/TcpConnection.cpp.s
+
+TcpCli.o: TcpCli.cc.o
+
+.PHONY : TcpCli.o
+
+# target to build an object file
+TcpCli.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/TcpCli.cc.o
+.PHONY : TcpCli.cc.o
+
+TcpCli.i: TcpCli.cc.i
+
+.PHONY : TcpCli.i
+
+# target to preprocess a source file
+TcpCli.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/TcpCli.cc.i
+.PHONY : TcpCli.cc.i
+
+TcpCli.s: TcpCli.cc.s
+
+.PHONY : TcpCli.s
+
+# target to generate assembly for a file
+TcpCli.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/TcpCli.cc.s
+.PHONY : TcpCli.cc.s
 
 TcpTest.o: TcpTest.cpp.o
 
@@ -683,6 +753,7 @@ Timer/Timer.o: Timer/Timer.cpp.o
 Timer/Timer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/Timer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/Timer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Timer/Timer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.o
 .PHONY : Timer/Timer.cpp.o
 
@@ -694,6 +765,7 @@ Timer/Timer.i: Timer/Timer.cpp.i
 Timer/Timer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/Timer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/Timer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Timer/Timer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.i
 .PHONY : Timer/Timer.cpp.i
 
@@ -705,6 +777,7 @@ Timer/Timer.s: Timer/Timer.cpp.s
 Timer/Timer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/Timer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/Timer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Timer/Timer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/Timer.cpp.s
 .PHONY : Timer/Timer.cpp.s
 
@@ -716,6 +789,7 @@ Timer/TimerQueue.o: Timer/TimerQueue.cpp.o
 Timer/TimerQueue.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Timer/TimerQueue.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.o
 .PHONY : Timer/TimerQueue.cpp.o
 
@@ -727,6 +801,7 @@ Timer/TimerQueue.i: Timer/TimerQueue.cpp.i
 Timer/TimerQueue.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Timer/TimerQueue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.i
 .PHONY : Timer/TimerQueue.cpp.i
 
@@ -738,6 +813,7 @@ Timer/TimerQueue.s: Timer/TimerQueue.cpp.s
 Timer/TimerQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcClient.dir/build.make CMakeFiles/RpcClient.dir/Timer/TimerQueue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/Timer/TimerQueue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/Timer/TimerQueue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb.dir/build.make CMakeFiles/tinyWeb.dir/Timer/TimerQueue.cpp.s
 .PHONY : Timer/TimerQueue.cpp.s
 
@@ -836,6 +912,7 @@ help:
 	@echo "... RpcClient"
 	@echo "... RpcServer"
 	@echo "... tinyWeb"
+	@echo "... tinyWeb1"
 	@echo "... Log/AsyncLog.o"
 	@echo "... Log/AsyncLog.i"
 	@echo "... Log/AsyncLog.s"
@@ -881,6 +958,9 @@ help:
 	@echo "... Tcp/TcpConnection.o"
 	@echo "... Tcp/TcpConnection.i"
 	@echo "... Tcp/TcpConnection.s"
+	@echo "... TcpCli.o"
+	@echo "... TcpCli.i"
+	@echo "... TcpCli.s"
 	@echo "... TcpTest.o"
 	@echo "... TcpTest.i"
 	@echo "... TcpTest.s"

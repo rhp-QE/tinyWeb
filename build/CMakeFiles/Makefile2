@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /clone/tinyWeb/build
 # The main recursive "all" target.
 all: CMakeFiles/RpcClient.dir/all
 all: CMakeFiles/RpcServer.dir/all
+all: CMakeFiles/tinyWeb1.dir/all
 all: CMakeFiles/tinyWeb.dir/all
 
 .PHONY : all
@@ -86,6 +87,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/RpcClient.dir/clean
 clean: CMakeFiles/RpcServer.dir/clean
+clean: CMakeFiles/tinyWeb1.dir/clean
 clean: CMakeFiles/tinyWeb.dir/clean
 
 .PHONY : clean
@@ -143,6 +145,33 @@ RpcServer: CMakeFiles/RpcServer.dir/rule
 CMakeFiles/RpcServer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RpcServer.dir/build.make CMakeFiles/RpcServer.dir/clean
 .PHONY : CMakeFiles/RpcServer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tinyWeb1.dir
+
+# All Build rule for target.
+CMakeFiles/tinyWeb1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/clone/tinyWeb/build/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67,68 "Built target tinyWeb1"
+.PHONY : CMakeFiles/tinyWeb1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tinyWeb1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tinyWeb1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /clone/tinyWeb/build/CMakeFiles 0
+.PHONY : CMakeFiles/tinyWeb1.dir/rule
+
+# Convenience name for target.
+tinyWeb1: CMakeFiles/tinyWeb1.dir/rule
+
+.PHONY : tinyWeb1
+
+# clean rule for target.
+CMakeFiles/tinyWeb1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tinyWeb1.dir/build.make CMakeFiles/tinyWeb1.dir/clean
+.PHONY : CMakeFiles/tinyWeb1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tinyWeb.dir

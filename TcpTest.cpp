@@ -30,7 +30,6 @@ int main()
 {
     InetAddress address("127.0.0.1", 9090);
     EventLoop loop;
-
     TcpServer server(&loop, address, "ECHO", 10);
     //注册回调
     server.setConnectionCallback(onConnection);

@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tinyWeb",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RpcClient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RpcClient-Debug-91094039f27ca8aced9b.json",
+					"name" : "RpcClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RpcServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RpcServer-Debug-0078f2440739a6d63cf6.json",
+					"name" : "RpcServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tinyWeb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tinyWeb-Debug-21133eb8c96e56999b1a.json",
+					"name" : "tinyWeb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tinyWeb1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tinyWeb1-Debug-0c71ad0684ae8448b479.json",
+					"name" : "tinyWeb1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/clone/tinyWeb/build",
+		"source" : "/clone/tinyWeb"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
